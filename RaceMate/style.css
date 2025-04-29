@@ -1,0 +1,151 @@
+/* Reset some default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    color: #111827;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1f2937;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #374151;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: border 0.2s ease;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+  
+  button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+  }
+  
+  #results {
+    margin-top: 2rem;
+    background-color: #f3f4f6;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  #results h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  
+  #results p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    color: #374151;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .container {
+      padding: 1.25rem;
+    }
+  }
+  #pacemateResults {
+    margin-top: 2rem;
+    background-color: #f3f4f6;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  #pacemateResults h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  
+  #pacemateResults p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    color: #374151;
+  }
+
+  #riegelFormulaDescription p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+#riegelFormulaDescription p strong {
+    color: #333;
+}
+
+#riegelFormulaDescription p code {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: monospace;
+}
+.back-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #bbb;
+  }
+  
