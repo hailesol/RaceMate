@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Race Planner</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>RaceMate</h1>
+    <form id="raceForm">
+      <label for="raceName">Race Name:</label>
+      <input type="text" id="raceName" name="raceName" required />
+
+      <label for="raceDistance">Race Distance:</label>
+      <select id="raceDistance" required>
+        <option value="42.195">Marathon (42.195 km)</option>
+        <option value="21.097">Half Marathon (21.097 km)</option>
+        <option value="10">10K</option>
+        <option value="5">5K</option>
+      </select>
+
+      <label for="raceDate">Race Date:</label>
+      <div id="raceDatePicker"></div>
+
+      <label>Goal Time:</label>
+      <div style="display: flex; gap: 10px;">
+        <input type="number" id="goalHours" placeholder="HH" min="0" required>
+        <input type="number" id="goalMinutes" placeholder="MM" min="0" max="59" required>
+        <input type="number" id="goalSeconds" placeholder="SS" min="0" max="59" required>
+      </div>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="results" style="display: none;">
+      <h2>Results</h2>
+      <p id="countdown"></p>
+      <p id="pace"></p>
+      <p id="paceMile"></p>
+      <p id="gels"></p>
+      <small style="color: #666;">
+        * Assumes 25g carbs per gel. Recommended intake: 30–60g carbs per hour.
+      </small>
+
+    </div>
+    <div style="margin-top: 20px; text-align: center;">
+        <a href="pacemate.html">
+          <button class="back-button">PaceMate - Race Predictor</button>
+        </a>
+      </div>      
+  </div>
+
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js"></script>
+</body>
+</html>
