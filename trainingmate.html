@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrainingMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+ <!-- Navbar -->
+ <div class="navbar">
+    <div class="burger-icon" onclick="toggleMenu()" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar-title">TrainingMate</div>
+  </div>
+
+  <!-- Dropdown menu -->
+  <div id="menu" class="menu">
+    <a href="index.html">RaceMate</a>
+    <a href="pacemate.html">PaceMate</a>
+    <a href="trainingmate.html">TrainingMate</a>
+  </div>
+    <form onsubmit="event.preventDefault(); calculateZones();">
+      <label>
+        <input class="radiobutton" type="radio" name="method" value="hr" onchange="selectMethod(this.value)">
+        Use Max Heart Rate
+      </label>
+
+      <label>
+        <input class="radiobutton" type="radio" name="method" value="pace" onchange="selectMethod(this.value)">
+        Use 5K Max Pace
+      </label>
+
+      <div id="hrInput" style="display: none;">
+        <label for="maxHR">Enter your Max HR from 5K:</label>
+        <input type="number" id="maxHR" />
+      </div>
+
+      <div id="paceInput" style="display:none;">
+        <label>Enter your 5K time:</label>
+        <div class="time-inputs">
+          <input type="number" id="hours" placeholder="hh" min="0" max="5">
+          <span>:</span>
+          <input type="number" id="minutes" placeholder="mm" min="0" max="59">
+          <span>:</span>
+          <input type="number" id="seconds" placeholder="ss" min="0" max="59">
+        </div>
+      </div>      
+
+      <button type="submit">Calculate Zones</button>
+    </form>
+
+    <div id="results" style="display: none;">
+  </div>
+
+  <script src="trainingmate.js"></script>
+</body>
+</html>
