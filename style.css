@@ -348,4 +348,6 @@
   input:checked + .slider:before {
     transform: translateX(24px);
   }
-  
+  .pace-unit {
+font-size: 75%;
+}
