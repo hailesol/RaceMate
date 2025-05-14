@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="form-title">Sign Up</h1>
+
+    <form id="authForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <div id="confirmPasswordContainer">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
+      </div>
+
+      <button type="submit" id="submitButton">Sign Up</button>
+    </form>
+
+    <p style="text-align:center; margin-top: 1rem;">
+      <span id="toggleText">Already have an account?</span>
+      <a href="#" id="toggleLink" style="color: #3b82f6;">Log In</a>
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
